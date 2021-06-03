@@ -1,6 +1,6 @@
-import product1 from "../../images/the-classic.jpg";
-import product2 from "../../images/the-spicy-sweet.jpg";
-import product3 from "../../images/the-goat.jpg";
+import product1 from "../images/the-classic.jpg";
+import product2 from "../images/the-spicy-sweet.jpg";
+import product3 from "../images/the-goat.jpg";
 
 export const productData = [
   {

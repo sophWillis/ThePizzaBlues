@@ -13,7 +13,7 @@ export default Locations;
 
 const LocationsContainer = styled.div`
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
+  padding: 5rem 30px;
   background-color: #fdfdf6;
   color: #0c052e;
 `;

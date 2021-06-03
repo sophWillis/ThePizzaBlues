@@ -46,12 +46,21 @@ const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Copyright = styled.p`
   font-size: 1rem;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 26px;
+  }
 `;
 
 const SocialIcons = styled.div`

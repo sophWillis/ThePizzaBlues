@@ -28,7 +28,7 @@ export default Products;
 
 const ProductsContainer = styled.div`
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
+  padding: 5rem 30px;
   background: #fdfdf6;
   color: #0c052e;
 `;
