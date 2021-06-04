@@ -7,6 +7,7 @@ const Hero = () => {
     <HeroContainer>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <Patch></Patch>
       </HeroBg>
       <HeroContent>
         <HeroItems>
@@ -33,6 +34,15 @@ const HeroBg = styled.div`
   overflow: hidden;
 `;
 
+const Patch = styled.div`
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 275px;
+  height: 230px;
+`;
+
 const VideoBg = styled.video`
   width: 100%;
   height: 100%;
@@ -42,6 +52,10 @@ const VideoBg = styled.video`
 const HeroContent = styled.div`
   height: 100%;
   display: flex;
+
+  @media screen and (max-width: 400px) {
+    margin-top: 100px;
+  }
 `;
 
 const HeroItems = styled.div`
@@ -60,7 +74,7 @@ const HeroH1 = styled.h1`
   width: min-content;
 
   @media screen and (max-width: 400px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -77,9 +91,9 @@ const HeroBtn = styled.button`
   color: #fff;
   transition: 0.2s ease-out;
   &:hover {
-    background: #f9f4ba;
+    background: #ffc500;
     transition: 0.2s ease-out;
     cursor: pointer;
-    color: #1a2535;
+    color: #0c052e;
   }
 `;

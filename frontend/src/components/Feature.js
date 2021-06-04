@@ -47,7 +47,7 @@ const FeatureButton = styled.button`
   padding: 0.6rem 3rem;
   border: none;
   background: #ffc500;
-  color: #000;
+  color: #0c052e;
   transition: 0.2s ease-out;
   &:hover {
     color: #fff;

@@ -4,6 +4,7 @@ import { GlobalStyle } from "./globalStyles";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
 import { productData } from "./data/productData";
+import { locationData } from "./data/locationData";
 import Feature from "./components/Feature";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -23,9 +24,9 @@ function App() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
-      <Products heading="Choose Your Favourite" data={productData} />
+      <Products data={productData} />
       <Feature />
-      <Locations />
+      <Locations data={locationData} />
       <Footer />
     </Router>
   );

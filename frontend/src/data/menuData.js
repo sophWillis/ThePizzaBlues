@@ -4,4 +4,5 @@ export const menuData = [
   { title: "Menu", link: "menu" },
   { title: "About", link: "about" },
   { title: "Contact & Hire", link: "contact-and-hire" },
+  { title: "Order", link: "order" },
 ];

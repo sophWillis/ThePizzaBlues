@@ -13,9 +13,9 @@ const Navbar = ({ toggle }) => {
 
   const changeNav = () => {
     window.scrollY >= window.innerHeight
-      ? setScrollNav(false)
-      : setScrollNav(true);
-    window.scrollY >= 80 ? setHideMenu(false) : setHideMenu(true);
+      ? setScrollNav(true)
+      : setScrollNav(false);
+    window.scrollY >= 80 ? setHideMenu(true) : setHideMenu(false);
   };
 
   useEffect(() => {
@@ -37,9 +37,9 @@ const Navbar = ({ toggle }) => {
           {menuData.map((item, index) => (
             <NavLink
               to={item.link}
-              smooth={true}
+              smooth="true"
               duration={500}
-              spy={true}
+              spy="true"
               exact="true"
               className={item.className}
               key={index}
@@ -112,7 +112,7 @@ const Bars = styled(HiOutlineMenuAlt4)`
 `;
 
 const NavMenu = styled.div`
-  display: ${({ hideMenu }) => (hideMenu ? "flex" : "none")};
+  display: ${({ hideMenu }) => (hideMenu ? "none" : "flex")};
   height: 100%;
 
   @media screen and (max-width: 768px) {
@@ -122,5 +122,5 @@ const NavMenu = styled.div`
 
 const Cart = styled(TiShoppingCart)`
   font-size: 2rem;
-  color: ${({ scrollNav }) => (scrollNav ? "#fff" : "#1a2535")};
+  color: ${({ scrollNav }) => (scrollNav ? "#1a2535" : "#fff")};
 `;

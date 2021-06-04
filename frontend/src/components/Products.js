@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const Products = ({ heading, data }) => {
+const Products = ({ data }) => {
   return (
     <ProductsContainer>
-      <ProductsHeading>{heading}</ProductsHeading>
+      <ProductsHeading>Choose Your Favourite</ProductsHeading>
       <ProductWrapper>
         {data.map((product, index) => {
           return (
