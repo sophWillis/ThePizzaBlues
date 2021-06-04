@@ -1,24 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+
+// Actions
+import { getProducts as listProducts } from "../redux/actions/productActions";
 
 const Products = ({ data }) => {
+  const dispatch = useDispatch();
+  const getProducts = useSelector((state) => state.getProducts);
+  const { products, loading, error } = getProducts;
+
+  useEffect(() => {
+    dispatch(listProducts());
+  }, [dispatch]);
+
   return (
     <ProductsContainer>
       <ProductsHeading>Choose Your Favourite</ProductsHeading>
       <ProductWrapper>
-        {data.map((product, index) => {
-          return (
-            <ProductCard key={index}>
-              <ProductImg src={product.img} alt={product.name} />
+        {loading ? (
+          <h2>Loading...</h2>
+        ) : error ? (
+          <h2>{error}</h2>
+        ) : (
+          products.map((product) => (
+            <ProductCard>
+              <ProductImg src={product.imageUrl} alt={product.name} />
               <ProductInfo>
                 <ProductTitle>{product.name}</ProductTitle>
-                <ProductDesc>{product.desc}</ProductDesc>
-                <ProductPrice>{product.price}</ProductPrice>
-                <ProductButton>{product.button}</ProductButton>
+                <ProductDesc>{product.description}</ProductDesc>
+                <ProductPrice>£{product.price}</ProductPrice>
+                <ProductButton>Add To Cart</ProductButton>
               </ProductInfo>
             </ProductCard>
-          );
-        })}
+          ))
+        )}
       </ProductWrapper>
     </ProductsContainer>
   );

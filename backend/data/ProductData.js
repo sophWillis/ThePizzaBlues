@@ -5,7 +5,7 @@ const ProductData = [
     price: 6,
     countInStock: 10,
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/6076f1e1fe63fe56ad428b98/1622220586747-CWMOQIWLGR7PG2CZCZZ9/ke17ZwdGBToddI8pDm48kGS78un_bcNZLY1QrfTmegV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmmzJBBHkqvGAibxByi2-xi1RoNc7vr9m3ozvkcMF-yMAseWsVVmXrIaQg6-A-MY58/image-asset.jpeg",
+      "https://raw.githubusercontent.com/sophWillis/ThePizzaBlues/a4db418ebed5a7c7947514682f12720c04ce6eca/frontend/src/images/the-classic.jpg",
   },
   {
     name: "The Spicy Sweet",
@@ -14,7 +14,7 @@ const ProductData = [
     price: 8,
     countInStock: 10,
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/6076f1e1fe63fe56ad428b98/1622220586747-CWMOQIWLGR7PG2CZCZZ9/ke17ZwdGBToddI8pDm48kGS78un_bcNZLY1QrfTmegV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmmzJBBHkqvGAibxByi2-xi1RoNc7vr9m3ozvkcMF-yMAseWsVVmXrIaQg6-A-MY58/image-asset.jpeg",
+      "https://github.com/sophWillis/ThePizzaBlues/blob/a4db418ebed5a7c7947514682f12720c04ce6eca/frontend/src/images/the-spicy-sweet.jpg?raw=true",
   },
   {
     name: "The Goat (V)",
@@ -22,16 +22,7 @@ const ProductData = [
     price: 8,
     countInStock: 10,
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/6076f1e1fe63fe56ad428b98/1622220586747-CWMOQIWLGR7PG2CZCZZ9/ke17ZwdGBToddI8pDm48kGS78un_bcNZLY1QrfTmegV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmmzJBBHkqvGAibxByi2-xi1RoNc7vr9m3ozvkcMF-yMAseWsVVmXrIaQg6-A-MY58/image-asset.jpeg",
-  },
-  {
-    name: "The Special Request (V)",
-    description:
-      "Tomato base, fior de latte, garlic mushrooms, truffle oil, rocket, balsamic glaze",
-    price: 8,
-    countInStock: 10,
-    imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/6076f1e1fe63fe56ad428b98/1622220586747-CWMOQIWLGR7PG2CZCZZ9/ke17ZwdGBToddI8pDm48kGS78un_bcNZLY1QrfTmegV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmmzJBBHkqvGAibxByi2-xi1RoNc7vr9m3ozvkcMF-yMAseWsVVmXrIaQg6-A-MY58/image-asset.jpeg",
+      "https://github.com/sophWillis/ThePizzaBlues/blob/a4db418ebed5a7c7947514682f12720c04ce6eca/frontend/src/images/the-goat.jpg?raw=true",
   },
 ];
 
